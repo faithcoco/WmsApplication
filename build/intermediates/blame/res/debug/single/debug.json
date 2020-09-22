@@ -1,0 +1,530 @@
+[
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_completion1.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_completion1.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_help.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxhdpi\\help.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_stock_allocation.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_stock_allocation.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_password.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_password.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_scanview.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_scanview.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_claim_material.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_claim_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_upload.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_upload.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_inspection.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_inspection.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_confirm2.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_confirm2.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_detail_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_detail_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_app.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxxhdpi\\ic_app.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_codelist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_codelist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_content_areaselect.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\content_areaselect.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable_view_animation.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable\\view_animation.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_input.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_process.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_process.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_production_order.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_production_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_serch.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_serch.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_production_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_production_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_index.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_index.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_minus.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_minus.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_index.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_index.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_inspectionlist2.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_inspectionlist2.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_defaultpic.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_defaultpic.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_confirm1.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_confirm1.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_switch.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_switch.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_select.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_select.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_inventory.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_inventory.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_chart_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_chart_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_testlist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_testlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_user.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_user.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_areaselect.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_areaselect.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_return.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_return.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_stores.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_stores.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_port.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_port.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_purchase.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_purchase.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_picture.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_picture.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_selector.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_help.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_confirmlist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_confirmlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_layout_progress.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\layout_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_process.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_process.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_scan.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_scan.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_upload.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_upload.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_layout_title.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\layout_title.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_detail_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_switch2.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_switch2.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_logistics_distribution.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_logistics_distribution.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_material.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_order_change.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_order_change.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_my.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_my.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable_selector_switch.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable\\selector_switch.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_hwyd.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_hwyd.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_confirm.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_confirm.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable_bg_border.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable\\bg_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_print.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_print.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_put_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_put_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_bill_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_bill_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_cprk.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_cprk.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_putdetail.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_putdetail.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_loading.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_loading.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_allocation.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_allocation.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_dbrk.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_dbrk.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_add2.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_add2.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_sort.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_sort.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_put.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_put.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_packing_inspetion.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_packing_inspetion.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_inventory.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_inventory.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_test.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_packing_inspetion.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_packing_inspetion.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_scan.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_my2.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_my2.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_funcation.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_funcation.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_help.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_help.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_textview.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_textview.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_selected.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_qualified_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_qualified_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_unqualified.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_unqualified.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_gxbg.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_gxbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_scan_check.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_scan_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_choose.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_choose.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_meterial.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_meterial.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_reportprint.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_reportprint.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_gxbg.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_gxbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_purchaselist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_purchaselist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_manage.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_manage.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_radiogroup.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_radiogroup.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_productionwarehousing.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_productionwarehousing.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_dispatchdetailslist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_dispatchdetailslist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_dhsj.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_dhsj.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\drawable_selector_rember.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\drawable\\selector_rember.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_production_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_production_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_details.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_barcode.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_barcode.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_inspectionlist.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_inspectionlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_cgrk.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_cgrk.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_input.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_input.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_dhcj.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_dhcj.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_dispatchdetails.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_dispatchdetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_bill_detail.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_bill_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_ckkb.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_ckkb.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_qualified.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_qualified.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_confirmlist2.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_confirmlist2.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_completion2.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_completion2.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_maxedittext.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_maxedittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_item_stockcheck.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\item_stockcheck.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_pallet_adjustment.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_pallet_adjustment.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_clear.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xxhdpi\\clear.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_supplement_list.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_supplement_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_add.png.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-xhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\build\\intermediates\\res\\merged\\debug\\layout_activity_stockcheck.xml.flat",
+        "source": "C:\\Users\\curry\\AndroidStudioProjects\\MyApplication3\\wms\\src\\main\\res\\layout\\activity_stockcheck.xml"
+    }
+]

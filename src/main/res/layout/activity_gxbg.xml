@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="bean"
+            type="com.lkrh.storescontrol.bean.GxbgBean" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lkrh.storescontrol.view.GxbgActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title1"
+            style="@style/textview"
+            android:gravity="center_vertical"
+            android:text="条码扫描："
+            android:textColor="@color/blue" />
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_scan" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/edittext"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_scan"
+            android:layout_toRightOf="@id/tv_title1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview"
+            android:text="订单状态：" />
+
+        <TextView
+            android:id="@+id/tv_cStatus"
+            style="@style/edittext"
+            android:layout_width="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_margin" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/b_start"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/blue"
+            android:text="开工"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_margin="@dimen/layout_margin"
+            android:text="订单信息："
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_inventory"
+            android:drawableRight="@mipmap/ic_choose"
+            android:hint="请选择"
+
+            android:layout_alignParentRight="true"
+            style="@style/textview"
+            />
+    </RelativeLayout>
+    <include
+
+        android:visibility="gone"
+        android:id="@+id/l_gxbg_info"
+        layout="@layout/item_gxbg"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_margin="@dimen/layout_margin"
+            android:text="工序："
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:drawableRight="@mipmap/ic_choose"
+            android:hint="请选择"
+            android:id="@+id/tv_process"
+            android:layout_alignParentRight="true"
+            style="@style/textview"
+            />
+    </RelativeLayout>
+    <include
+        android:visibility="gone"
+        android:id="@+id/l_gxbg_process"
+        layout="@layout/item_process"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview"
+            android:text="完工数量：" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_count"
+            style="@style/edittext"
+            android:layout_width="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_margin" />
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textview"
+            android:text="完工人：" />
+
+        <EditText
+            android:id="@+id/et_user"
+            style="@style/edittext"
+            android:layout_width="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_margin" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/b_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@color/blue"
+        android:text="完工填报"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+</layout>

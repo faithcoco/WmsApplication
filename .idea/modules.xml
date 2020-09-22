@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/161184037/Lingdong-android.iml" filepath="$PROJECT_DIR$/.idea/modules/161184037/Lingdong-android.iml" group="My Application/Lingdong-android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/949320166/My_Application.iml" filepath="$PROJECT_DIR$/.idea/modules/949320166/My_Application.iml" group="My_Application" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wms.iml" filepath="$PROJECT_DIR$/.idea/modules/wms.iml" group="My Application/wms" />
+    </modules>
+  </component>
+</project>
