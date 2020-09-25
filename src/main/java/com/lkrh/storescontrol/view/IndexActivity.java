@@ -110,7 +110,7 @@ public class IndexActivity extends BaseActivity {
                     }else   if(userinfoBean.getMenu().get(i).getMenushowname().equals("破坏抽检")){
                         intent  =new Intent(IndexActivity.this, ConfirmActivity.class);
                     }else   if(userinfoBean.getMenu().get(i).getMenushowname().equals("采购入库")){
-                        if(company.equals("浦东瀚氏")||company.equals("新傲科技")||company.equals("强田")){
+                        if(company.equals("浦东瀚氏")||company.equals("新傲科技")){
                             intent  =new Intent(IndexActivity.this, BillListActivity.class);
                         }else {
                             intent  =new Intent(IndexActivity.this, ProductionwarehousingActivity.class);

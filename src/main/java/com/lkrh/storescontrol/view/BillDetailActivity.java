@@ -91,9 +91,9 @@ public class BillDetailActivity extends BaseActivity {
                 public void onClick(View view) {
 
                     //判断是否有未扫描条码
-                    if(menuBean.getMenushowname().equals("销售发货")){
+                    if(menuBean.getMenushowname().equals("销售发货")||menuBean.getMenushowname().equals("材料出库")&& company.equals("强田")){
                         for (int i = 0; i <list.size() ; i++) {
-                            int undone=Integer.parseInt(list.get(i).getField8value());
+                            double undone=Double.parseDouble(list.get(i).getField8value());
                             if(undone!=0){
                                 Toast.makeText(BillDetailActivity.this,"有未扫码条目，请完成后再提交",Toast.LENGTH_LONG).show();
                                 return;

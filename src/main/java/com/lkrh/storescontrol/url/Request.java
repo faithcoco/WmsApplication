@@ -13,13 +13,12 @@ import retrofit2.Retrofit;
 
 public class Request {
 
-   //public  static String BASEURL="http://192.168.200.20:8881";
-   // public  static String BASEURL="http://192.168.1.85:8881";
+
    public  static String BASEURL="http://163.157.74.209:8881";
   // public  static  String HS_URL="http://192.168.2.253:8881";
     public  static  String HS_URL="http://pdhsservice.vaiwan.com";
     public  static  String XinAo_URL="http://simguiapp.vaiwan.com";
-    public  static  String Qt_URL="http://qtwmsapp.vaiwan.com";
+    public  static  String Qt_URL="http://58.40.11.38:8881";
     //public  static  String SKF_URL="http://163.157.74.209:8881";
     public  static  String SKF_URL="http://skfwmsapp.vaiwan.com";
     public  static  String REGO_URL="http://rgwmsservice.vaiwan.com";
@@ -36,7 +35,7 @@ public class Request {
         RequestBody body=RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"),obj);
         iUrl login = retrofit.create(iUrl.class);
         retrofit2.Call<ResponseBody> data = login.getMessage(body);
-        Log.i("url-->",data.request().url().toString()+"/Handler.ashx");
+        Log.i("url-->",data.request().url().toString());
 
         return  data;
     }

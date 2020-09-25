@@ -111,13 +111,13 @@ public class Untils {
         }
         return detailsList;
     }
-    public static void updateIquantity(ConfirmlistBean confirmlistBean,int iquantity ) {
-        int current=Integer.parseInt(confirmlistBean.getField7value());
-        int add=iquantity;
+    public static void updateIquantity(ConfirmlistBean confirmlistBean,double iquantity ) {
+        double current=Double.parseDouble(confirmlistBean.getField7value());
+        double add=iquantity;
         current=current+add;
         confirmlistBean.setField7text("已扫数量："+current);
         confirmlistBean.setField7value(current+"");
-        int undone=Integer.parseInt( confirmlistBean.getField8value());
+        double undone=Double.parseDouble( confirmlistBean.getField8value());
         undone=undone-add;
         confirmlistBean.setField8value(undone+"");
         confirmlistBean.setField8text("未扫数量："+undone);

@@ -37,36 +37,37 @@ class GxbgActivity : BaseActivity() {
 
         menuBean = intent.getParcelableExtra("menubean")
         Untils.initTitle(menuBean!!.menushowname, this)
-
+        val sharedPreferences = getSharedPreferences("sp", MODE_PRIVATE)
+        tv_user.setText(sharedPreferences.getString("user", ""))
         iv_scan.setOnClickListener(onClickListener)
         tv_inventory.setOnClickListener(onClickListener)
         tv_process.setOnClickListener(onClickListener)
         b_start.setOnClickListener(onClickListener)
         b_ok.setOnClickListener(onClickListener)
        et_user.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(
-                s: CharSequence,
-                start: Int,
-                count: Int,
-                after: Int
-            ) {
-            }
+           override fun beforeTextChanged(
+               s: CharSequence,
+               start: Int,
+               count: Int,
+               after: Int
+           ) {
+           }
 
-            override fun onTextChanged(
-                s: CharSequence,
-                start: Int,
-                before: Int,
-                count: Int
-            ) {
-            }
+           override fun onTextChanged(
+               s: CharSequence,
+               start: Int,
+               before: Int,
+               count: Int
+           ) {
+           }
 
-            override fun afterTextChanged(s: Editable) {
-                if (handler.hasMessages(0)) {
-                    handler.removeMessages(0)
-                }
-                handler.sendEmptyMessageDelayed(0, 1000)
-            }
-        })
+           override fun afterTextChanged(s: Editable) {
+               if (handler.hasMessages(0)) {
+                   handler.removeMessages(0)
+               }
+               handler.sendEmptyMessageDelayed(0, 1000)
+           }
+       })
         et_code.setOnKeyListener(View.OnKeyListener { view, i, event ->
             if (i == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN) {
                 getData()
@@ -114,12 +115,12 @@ class GxbgActivity : BaseActivity() {
     }
 
     private fun setProcess(processData: ProcessBean.Data) {
-        tv_process_rowno.setText("工序行号："+processData.rowno)
-        tv_process_ccode.setText("单号："+processData.ccode)
-        tv_process_name.setText("工序名称："+processData.invname)
-        tv_process_count.setText("数量："+processData.iQuantity)
-        tv_done.setText("已完工："+processData.quantitysBG)
-        tv_undone.setText("未完工："+processData.quantitysWBG)
+        tv_process_rowno.setText("工序行号：" + processData.rowno)
+        tv_process_ccode.setText("单号：" + processData.ccode)
+        tv_process_name.setText("工序名称：" + processData.invname)
+        tv_process_count.setText("数量：" + processData.iQuantity)
+        tv_done.setText("已完工：" + processData.quantitysBG)
+        tv_undone.setText("未完工：" + processData.quantitysWBG)
     }
 
     var onClickListener =
@@ -129,52 +130,57 @@ class GxbgActivity : BaseActivity() {
                     Untils.openScan(this)
                 }
                 tv_inventory.id -> {
-                    if(gxbgBean!=null){
+                    if (gxbgBean != null) {
                         intent = Intent(
                             this,
                             InventoryActivity::class.java
                         )
-                        intent.putExtra("data",gxbgBean)
+                        intent.putExtra("data", gxbgBean)
                         startActivity(intent)
-                    }else{
+                    } else {
                         iToast.showToast(this, "请先进行条码扫描", 1000)
 
                     }
-                }tv_process.id->{
-                if(inventoryData!=null){
-                    intent = Intent(
-                        this,
-                        ProcessActivity::class.java
-                    )
-                    intent.putExtra("condition", inventoryData.rowno)
-                    intent.putExtra("menubean", menuBean)
-                    startActivity(intent)
-                }else{
-                    iToast.showToast(this, "请先选择订单信息", 1000)
                 }
-            }b_start.id->{
-                putdata("1")
-            }b_ok.id->{
-                if(processData!=null){
-
-                    if(processData.quantitysWBG.toDouble()<et_count.text.toString().toDouble()){
-                        iToast.showToast(this, "当前完工数量不能大于未完工数量", 1000)
-                        return@OnClickListener
+                tv_process.id -> {
+                    if (inventoryData != null) {
+                        intent = Intent(
+                            this,
+                            ProcessActivity::class.java
+                        )
+                        intent.putExtra("condition", inventoryData.rowno)
+                        intent.putExtra("menubean", menuBean)
+                        startActivity(intent)
+                    } else {
+                        iToast.showToast(this, "请先选择订单信息", 1000)
                     }
                 }
-                putdata("2")
-            }
+                b_start.id -> {
+                    putdata("1")
+                }
+                b_ok.id -> {
+                    if (processData != null) {
+
+                        if (processData.quantitysWBG.toDouble() < et_count.text.toString()
+                                .toDouble()
+                        ) {
+                            iToast.showToast(this, "当前完工数量不能大于未完工数量", 1000)
+                            return@OnClickListener
+                        }
+                    }
+                    putdata("2")
+                }
 
                 else -> {
                 }
             }
         }
-    private  fun setInfo(inventoryData:GxbgBean.Data){
-        tv_rowno.setText("单号："+inventoryData.rowno)
-        tv_iquantity.setText("数量："+inventoryData.iquantity)
-        tv_invCode.setText("存货编码："+inventoryData.InvCode)
-        tv_invName.setText("存货名称："+inventoryData.InvName)
-        tv_invStd.setText("规格型号："+inventoryData.InvStd)
+    private  fun setInfo(inventoryData: GxbgBean.Data){
+        tv_rowno.setText("单号：" + inventoryData.rowno)
+        tv_iquantity.setText("数量：" + inventoryData.iquantity)
+        tv_invCode.setText("存货编码：" + inventoryData.InvCode)
+        tv_invName.setText("存货名称：" + inventoryData.InvName)
+        tv_invStd.setText("规格型号：" + inventoryData.InvStd)
     }
     private fun getData() {
         val jsonObject = JSONObject()
@@ -199,7 +205,10 @@ class GxbgActivity : BaseActivity() {
 
         val data = Request.getRequestbody(obj)
         data.enqueue(object : Callback<ResponseBody> {
-            override fun onResponse(call: retrofit2.Call<ResponseBody>, response: Response<ResponseBody>) {
+            override fun onResponse(
+                call: retrofit2.Call<ResponseBody>,
+                response: Response<ResponseBody>
+            ) {
 
                 try {
                     if (response.code() == 200) {
@@ -208,11 +217,14 @@ class GxbgActivity : BaseActivity() {
                             response.body()!!.string(),
                             GxbgBean::class.java
                         )
-                        tv_cStatus.setText(gxbgBean!!.cStatus)
-                        if(gxbgBean!!.cStatus.equals("未开工")){
-                            b_start.visibility=View.VISIBLE
+                        if (gxbgBean!!.Resultcode.equals("0")) {
+                            iToast.showToast(this@GxbgActivity, gxbgBean!!.ResultMessage, 1000)
+                        } else {
+                            tv_cStatus.setText(gxbgBean!!.cStatus)
+                            if (gxbgBean!!.cStatus.equals("未开工")) {
+                                b_start.visibility = View.VISIBLE
+                            }
                         }
-
 
 
                     }
@@ -227,7 +239,7 @@ class GxbgActivity : BaseActivity() {
             }
         })
     }
-    private fun putdata(tag:String) {
+    private fun putdata(tag: String) {
         val jsonObject = JSONObject()
         try {
 
@@ -237,12 +249,12 @@ class GxbgActivity : BaseActivity() {
             jsonObject.put("layout", "1")
             jsonObject.put("button", tag)
             jsonObject.put("condition", et_code.text.toString())
-            if(tag.equals("2")){
+            if(tag=="2"){
                 var formdata=JSONObject()
                 formdata.put("ccode", processData.ccode)
                 formdata.put("ProcessNo", processData.ProcessNo)
                 formdata.put("iquantity", et_count.text.toString())
-                formdata.put("Operator",et_user.text.toString())
+                formdata.put("Operator", tv_user.text.toString())
                 jsonObject.put("formdata", formdata.toString())
             }else{
                 jsonObject.put("formdata", "")
@@ -259,34 +271,40 @@ class GxbgActivity : BaseActivity() {
 
         val data = Request.getRequestbody(obj)
         data.enqueue(object : Callback<ResponseBody> {
-            override fun onResponse(call: retrofit2.Call<ResponseBody>, response: Response<ResponseBody>) {
+            override fun onResponse(
+                call: retrofit2.Call<ResponseBody>,
+                response: Response<ResponseBody>
+            ) {
 
                 try {
                     if (response.code() == 200) {
 
-                        gxbgBean = Gson().fromJson(
+                       var gxbgBean = Gson().fromJson(
                             response.body()!!.string(),
                             GxbgBean::class.java
                         )
 
-                        if(gxbgBean!!.Resultcode=="200") {
+                        if (gxbgBean!!.Resultcode == "200") {
 
-                            if(tag.equals("2")){
-                               et_count.setText("")
+                            if (tag.equals("2")) {
+                                et_count.setText("")
                                 et_user.setText("")
-                                processData=null
-                                inventoryData=null
+                                processData = ProcessBean.Data(
+                                    "", "", "",
+                                    "", "", "", "", "", "", ""
+                                )
+                                inventoryData = GxbgBean.Data("","","","","")
                                 setProcess(processData)
                                 setInfo(inventoryData)
-                            }else{
+                            } else {
                                 b_start.setVisibility(View.GONE)
+                                getData()
                             }
                         }
 
 
 
                         iToast.showToast(this@GxbgActivity, gxbgBean!!.ResultMessage, 1000)
-
 
 
                     }

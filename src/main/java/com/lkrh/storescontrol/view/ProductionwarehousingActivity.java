@@ -275,9 +275,9 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
 
     private void checkBoxCode(String code) {
-        Log.i("sc",code);
+
         code=code.trim();
-        Log.i("sc",code);
+
         arrivalHeadBean.setIquantity(binding.etIquantity.getText().toString());
         if(company.equals("新傲科技") && menuBean.getMenushowname().equals("货位调整")){
             if(code.toLowerCase().contains("PO")){
@@ -977,15 +977,20 @@ public class ProductionwarehousingActivity extends BaseActivity {
             ){
 
                 for (int i = 0; i <detailsList.size() ; i++) {
+                    if(detailsList.get(i).getField5value().equals(arrivalHeadBean.getCbatch())||detailsList.get(i).getField5value().isEmpty()){
+                        if(detailsList.get(i).getField2value().equals(arrivalHeadBean.getCposition())||detailsList.get(i).getField2value().isEmpty()){
+                            if(
+                                    detailsList.get(i).getField1value().equals(arrivalHeadBean.getCInvCode())
 
-                    if(
-                            detailsList.get(i).getField1value().equals(arrivalHeadBean.getCInvCode())
-                                    && detailsList.get(i).getField5value().equals(arrivalHeadBean.getCbatch())
-                                    && detailsList.get(i).getField2value().equals(arrivalHeadBean.getCposition())
-                    ){
-                       update(detailsList.get(i));
-                       isVerification=true;
+                            ){
+                                update(detailsList.get(i));
+                                isVerification=true;
+                            }
+                        }
+
                     }
+
+
                 }
 
                 if(!isVerification){
@@ -1010,9 +1015,9 @@ public class ProductionwarehousingActivity extends BaseActivity {
                 finish();
             }
         }else {
-            int current=Integer.parseInt(bean.getField7value());
-            int total=Integer.parseInt(bean.getField6value());
-            int add=Integer.parseInt(arrivalHeadBean.getIquantity());
+            double current=Double.parseDouble(bean.getField7value());
+            double total=Double.parseDouble(bean.getField6value());
+            double add=Double.parseDouble(arrivalHeadBean.getIquantity());
 
             if(current+add>total){
                 Toast.makeText(ProductionwarehousingActivity.this, "数量不能大于需求数量！", Toast.LENGTH_LONG).show();
@@ -1022,7 +1027,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
                 updateList(confirmlistBean);
                 if(!company.equals("新傲科技")) {
-                    if (Integer.parseInt(confirmlistBean.getField8value()) == 0) {
+                    if (Double.parseDouble(confirmlistBean.getField8value()) == 0) {
                         Toast.makeText(ProductionwarehousingActivity.this, "当前货物已达到需求数量！", Toast.LENGTH_LONG).show();
                         finish();
                     }
@@ -1034,7 +1039,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
     }
 
     private void updateList(ConfirmlistBean confirmlistBean) {
-        Untils.updateIquantity(confirmlistBean,Integer.parseInt(arrivalHeadBean.getIquantity()));
+        Untils.updateIquantity(confirmlistBean,Double.parseDouble(arrivalHeadBean.getIquantity()));
         detailPreferences.edit().putString("data",new Gson().toJson(detailsList)).commit();
         if(company.equals("新傲科技")){
             setList();
