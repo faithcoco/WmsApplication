@@ -33,7 +33,9 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".view.InventoryActivity"></activity>
+        <activity android:name=".view.AssemblyListActivity"></activity>
+        <activity android:name=".view.AssemblyActivity" />
+        <activity android:name=".view.InventoryActivity" />
         <activity android:name=".view.ProcessActivity" />
         <activity android:name=".view.GxbgActivity" />
         <activity android:name=".view.PalletAdjustmentActivity" />

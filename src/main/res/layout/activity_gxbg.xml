@@ -12,6 +12,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.lkrh.storescontrol.view.GxbgActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <include layout="@layout/layout_title" />
 
@@ -157,7 +164,15 @@
             android:text="完工人：" />
 
         <EditText
+            android:visibility="gone"
             android:id="@+id/et_user"
+            style="@style/edittext"
+            android:layout_width="200dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/layout_margin" />
+        <TextView
+
+            android:id="@+id/tv_user"
             style="@style/edittext"
             android:layout_width="200dp"
             android:layout_gravity="center_vertical"
@@ -174,5 +189,8 @@
         android:background="@color/blue"
         android:text="完工填报"
         android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>
 </layout>

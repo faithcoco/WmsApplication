@@ -16,3 +16,7 @@ data class ProcessBean (var Resultcode:String, var ResultMessage:String,var cSta
                            var invstd:String,var iQuantity:String,var ProcessNo:String,var ProcessDes:String,
                            var quantitysBG:String,var quantitysWBG:String)
 }
+data class AssemblyBean (var Resultcode:String, var ResultMessage:String, var formdata:Data){
+    data class Data(var ccode:String,var irowno:String,var cInvCode:String,var cInvName:String,
+                    var cbatch:String,var iquantity:String,var cComUnitName:String,var barcode:String)
+}

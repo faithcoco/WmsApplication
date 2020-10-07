@@ -86,28 +86,12 @@ public class BillDetailActivity extends BaseActivity {
             if(company.equals("浦东瀚氏") && menuBean.getMenushowname().equals("材料出库")){
                 binding.bDelete.setVisibility(View.VISIBLE);
             }
-           binding.bSubmit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
 
-                    //判断是否有未扫描条码
-                    if(menuBean.getMenushowname().equals("销售发货")||menuBean.getMenushowname().equals("材料出库")&& company.equals("强田")){
-                        for (int i = 0; i <list.size() ; i++) {
-                            double undone=Double.parseDouble(list.get(i).getField8value());
-                            if(undone!=0){
-                                Toast.makeText(BillDetailActivity.this,"有未扫码条目，请完成后再提交",Toast.LENGTH_LONG).show();
-                                return;
-                            }
-                        }
-
-                        updateData( binding.bSubmit.getText().toString());
-
-                    }else {
-                        updateData( binding.bSubmit.getText().toString());
-                    }
-
-                }
-            });
+        }
+        if(company.equals("强田") && menuBean.getMenushowname().equals("销售出库")
+                ||company.equals("强田") && menuBean.getMenushowname().equals("材料出库")){
+            binding.lBottom.setVisibility(View.VISIBLE);
+            binding.bSubmit.setVisibility(View.VISIBLE);
         }
         if(menuBean.getMenushowname().equals("其他入库确认")
                 ||menuBean.getMenushowname().equals("生产入库确认")
@@ -149,6 +133,29 @@ public class BillDetailActivity extends BaseActivity {
         if(menuBean.getMenushowname().equals("销售发货")) {
             sp.edit().putString(menuBean.getMenucode() + "List", "").commit();
         }
+        binding.bSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //判断是否有未扫描条码
+                if(menuBean.getMenushowname().equals("销售发货")||menuBean.getMenushowname().equals("材料出库")&& company.equals("强田")
+                        ||menuBean.getMenushowname().equals("销售出库")&& company.equals("强田")){
+                    for (int i = 0; i <list.size() ; i++) {
+                        double undone=Double.parseDouble(list.get(i).getField8value());
+                        if(undone!=0){
+                            Toast.makeText(BillDetailActivity.this,"有未扫码条目，请完成后再提交",Toast.LENGTH_LONG).show();
+                            return;
+                        }
+                    }
+
+                    updateData( binding.bSubmit.getText().toString());
+
+                }else {
+                    updateData( binding.bSubmit.getText().toString());
+                }
+
+            }
+        });
     }
 
     @Override

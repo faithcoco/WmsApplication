@@ -293,6 +293,7 @@ class GxbgActivity : BaseActivity() {
                                     "", "", "",
                                     "", "", "", "", "", "", ""
                                 )
+
                                 inventoryData = GxbgBean.Data("","","","","")
                                 setProcess(processData)
                                 setInfo(inventoryData)

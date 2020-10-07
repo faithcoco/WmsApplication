@@ -187,7 +187,7 @@ public class IndexActivity extends BaseActivity {
 
                     }else if(userinfoBean.getMenu().get(i).getMenushowname().equals("销售出库")){
                       //  intent  =new Intent(IndexActivity.this, BillListActivity.class);
-                        if(company.equals("新傲科技")){
+                        if(company.equals("新傲科技")||company.equals("强田")){
                             intent  =new Intent(IndexActivity.this, BillListActivity.class);
                         }else {
                             intent  =new Intent(IndexActivity.this, StockAllocationActivity.class);
@@ -212,8 +212,12 @@ public class IndexActivity extends BaseActivity {
                         //工序报工
                         intent  =new Intent(IndexActivity.this,GxbgActivity.class);
 
+                    }else if(userinfoBean.getMenu().get(i).getMenucode().equals("ZZCX")){
+                        //产品组装
+                        intent  =new Intent(IndexActivity.this,AssemblyActivity.class);
+
                     }else {
-                        return;
+                      return;
                     }
                     intent.putExtra("menuname",userinfoBean.getMenu().get(i).getMenushowname());
                     intent.putExtra("menubean",userinfoBean.getMenu().get(i));

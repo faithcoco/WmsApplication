@@ -41,6 +41,12 @@ public class PackingInspetionListActivity extends BaseActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         recyclerView.setAdapter(functionAdapter);
+        functionAdapter.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onClick(int position) {
+
+            }
+        });
     }
     public interface OnItemClickListener {
         void onClick(int position);

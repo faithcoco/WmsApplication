@@ -53,6 +53,9 @@ public class PackingInspetionActivity extends BaseActivity {
         menuBean=getIntent().getParcelableExtra("menubean");
         Untils.initTitle(getIntent().getStringExtra("menuname"),this);
 
+        if(company.equals("强田")){
+            binding.etHscode.setVisibility(View.GONE);
+        }
        binding.etBoxcode.setOnKeyListener(onKeyListener);
        binding.etCode.setOnKeyListener(onKeyListener);
        binding.etHscode.setOnKeyListener(onKeyListener);
