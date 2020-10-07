@@ -1375,6 +1375,11 @@ public class ProductionwarehousingActivity extends BaseActivity {
                 arrivalHeadBean.setCvenabbname(getIntent().getStringExtra("cvenabbname"));
 
                 binding.setBean(arrivalHeadBean);
+            }else if(company.equals("强田")){
+
+                binding.bSearch.setVisibility(View.VISIBLE);
+                binding.tvTotal.setVisibility(View.VISIBLE);
+
             }else {
                 binding.bSearch.setVisibility(View.GONE);
                 binding.tvTotal.setVisibility(View.GONE);

@@ -120,6 +120,8 @@ public class PutListActivity extends BaseActivity {
             binding.lPlate.setVisibility(View.VISIBLE);
         } else if(getIntent().getStringExtra("menuname").equals("货位调整") && company.equals("林肯SKF")) {
             binding.rlUpdate.setVisibility(View.VISIBLE);
+        }else if(getIntent().getStringExtra("menuname").equals("销售出库") && company.equals("强田")) {
+            binding.bSubmit.setVisibility(View.GONE);
         }
 
         binding.etUpdatecwhcode.setOnKeyListener(new View.OnKeyListener() {

@@ -108,7 +108,7 @@ class AssemblyActivity : BaseActivity() {
                         et_boxcode.setText(code)
                     }
                     2 -> {
-                        et_code.setText(code)
+                        et_code_assembly.setText(code)
                     }
                 }
 
@@ -179,6 +179,8 @@ class AssemblyActivity : BaseActivity() {
                                             menuBean!!.menucode + "List",
                                             Gson().toJson(assemblyList)
                                         ).commit()
+                                    tv_count.setText(assemblyList!!.size.toString())
+
                                 }
 
                             }
@@ -196,6 +198,15 @@ class AssemblyActivity : BaseActivity() {
 
             }
         })
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        sharedPreferences!!.edit()
+            .putString(
+                menuBean!!.menucode + "List",
+               ""
+            ).commit()
     }
     private fun putdata(tag: String) {
         val jsonObject = JSONObject()
