@@ -32,6 +32,7 @@ import com.lkrh.storescontrol.bean.ConfirmBean;
 import com.lkrh.storescontrol.bean.ConfirmlistBean;
 import com.lkrh.storescontrol.bean.LoginBean;
 import com.lkrh.storescontrol.bean.ProductBean;
+import com.lkrh.storescontrol.bean.ScanBean;
 import com.lkrh.storescontrol.bean.WarehouseBean;
 import com.lkrh.storescontrol.databinding.ActivityProductionwarehousingBinding;
 import com.lkrh.storescontrol.untils.iToast;
@@ -1086,7 +1087,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
         stringscandata= sharedPreferences.getString(menuBean.getMenucode()+"Scan", "");
 
         if(company.equals("瑞格菲克斯")||company.equals("新傲科技")){
-
+              //可重复扫描
         }else {
             if(stringscandata.contains(stringScan) ){
                 Toast.makeText(ProductionwarehousingActivity.this, "此二维码数据已添加", Toast.LENGTH_LONG).show();
@@ -1122,20 +1123,30 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
 
         //update sharedPreferences->scan item
-        List<String> listscan=new ArrayList<>();
 
+        List<ScanBean> listscan=new ArrayList<>();
         if(!stringscandata.isEmpty()){
-            listscan=Untils.stingsToList(stringscandata);
-        }
+            try {
+                Gson gson = new Gson();
+                JsonArray arry = new JsonParser().parse(stringscandata).getAsJsonArray();
+                for (JsonElement jsonElement : arry) {
+                    listscan.add(gson.fromJson(jsonElement, ScanBean.class));
+                }
 
-        listscan.add(stringScan);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        ScanBean bean=new ScanBean(stringScan);
+        listscan.add(bean);
 
 
 
 
         getCount();
-
-        sharedPreferences.edit().putString(menuBean.getMenucode()+"Scan",listscan.toString()).commit();
+        Log.i(menuBean.getMenucode()+"Scan",new Gson().toJson(listscan));
+        sharedPreferences.edit().putString(menuBean.getMenucode()+"Scan",new Gson().toJson(listscan)).commit();
 
 
     }

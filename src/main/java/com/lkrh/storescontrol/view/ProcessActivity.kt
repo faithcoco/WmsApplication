@@ -117,7 +117,7 @@ class ProcessActivity : BaseActivity() {
             }
             binding!!.tvProcessRowno.setText("工序行号："+mDatas[i].ProcessNo)
             binding!!.tvProcessCcode.setText("单号："+mDatas[i].ccode)
-            binding!!.tvProcessName.setText("工序名称："+mDatas[i].invname)
+            binding!!.tvProcessName.setText("工序描述："+mDatas[i].ProcessDes)
 
             binding!!.tvProcessCount.setText("数量："+mDatas[i].iQuantity)
             binding!!.tvDone.setText("已完工："+mDatas[i].quantitysBG)

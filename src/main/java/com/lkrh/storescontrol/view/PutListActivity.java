@@ -37,6 +37,7 @@ import com.lkrh.storescontrol.bean.ConfirmBean;
 import com.lkrh.storescontrol.bean.ConfirmlistBean;
 import com.lkrh.storescontrol.bean.LoginBean;
 
+import com.lkrh.storescontrol.bean.ScanBean;
 import com.lkrh.storescontrol.bean.WarehouseBean;
 import com.lkrh.storescontrol.databinding.ActivityPutListBinding;
 import com.lkrh.storescontrol.url.Request;
@@ -157,6 +158,12 @@ public class PutListActivity extends BaseActivity {
         buttonsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(arrivalHeadBeans!=null){
+                    if(arrivalHeadBeans.size()==0){
+                        Toast.makeText(PutListActivity.this,"请先添加清单",Toast.LENGTH_LONG).show();
+                        return;
+                    }
+                }
                 if(binding.rlUpdate.getVisibility()==View.VISIBLE){
                     if(binding.etUpdatecwhcode.getText().toString().isEmpty()){
                         Toast.makeText(PutListActivity.this,"请扫描调入仓位",Toast.LENGTH_LONG).show();
@@ -386,13 +393,26 @@ public class PutListActivity extends BaseActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             SharedPreferences sharedPreferences = getSharedPreferences("sp", Context.MODE_PRIVATE);
-                            //delete sharedPreferences->scan item
-                            String stringscandata="";
-                            Log.i("arrivalHeadBeans",new Gson().toJson(arrivalHeadBeans));
-                            stringscandata=sharedPreferences.getString(menuBean.getMenucode()+"Scan","");
-                            List<String> listcode = Untils.stingsToList(stringscandata);
 
-                            listcode.remove(i);
+                            String stringscandata="";
+
+                            stringscandata=sharedPreferences.getString(menuBean.getMenucode()+"Scan","");
+                            List<ScanBean> listscan=new ArrayList<>();
+                            if(!stringscandata.isEmpty()){
+                                try {
+                                    Gson gson = new Gson();
+                                    JsonArray arry = new JsonParser().parse(stringscandata).getAsJsonArray();
+                                    for (JsonElement jsonElement : arry) {
+                                        listscan.add(gson.fromJson(jsonElement, ScanBean.class));
+                                    }
+
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+
+                            }
+
+                           listscan.remove(i);
 
 
 
@@ -417,8 +437,9 @@ public class PutListActivity extends BaseActivity {
                             //delete sharedPreferences->putlist item
                             String strings= new Gson().toJson(arrivalHeadBeans);
 
+                            Log.i(menuBean.getMenucode()+"scan--->",listscan.toString());
                             sharedPreferences.edit().putString(menuBean.getMenucode()+"List",strings).commit();
-                            sharedPreferences.edit().putString(menuBean.getMenucode()+"Scan",listcode.toString()).commit();
+                            sharedPreferences.edit().putString(menuBean.getMenucode()+"Scan",new Gson().toJson(listscan)).commit();
 
 
 
