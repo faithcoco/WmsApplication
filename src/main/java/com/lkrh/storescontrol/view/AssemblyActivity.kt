@@ -17,7 +17,14 @@ import com.lkrh.storescontrol.untils.Untils
 import com.lkrh.storescontrol.untils.iToast
 import com.lkrh.storescontrol.url.Request
 import kotlinx.android.synthetic.main.activity_assembly.*
+import kotlinx.android.synthetic.main.activity_assembly.b_search
+import kotlinx.android.synthetic.main.activity_assembly.et_boxcode
+import kotlinx.android.synthetic.main.activity_assembly.iv_boxcode
+import kotlinx.android.synthetic.main.activity_assembly.tv_cInvName
+import kotlinx.android.synthetic.main.activity_assembly.tv_ccode
+import kotlinx.android.synthetic.main.activity_assembly.tv_count
 import kotlinx.android.synthetic.main.activity_gxbg.*
+import kotlinx.android.synthetic.main.activity_productionwarehousing.*
 import okhttp3.ResponseBody
 import org.json.JSONException
 import org.json.JSONObject
@@ -31,7 +38,8 @@ class AssemblyActivity : BaseActivity() {
     var assemblyList: ArrayList<AssemblyBean.Data>? = null
     var sharedPreferences:SharedPreferences?=null
     var tag=0;
-    var ccode="";
+    var ccode=""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_assembly)
@@ -86,6 +94,12 @@ class AssemblyActivity : BaseActivity() {
                 startActivity(intent)
             }
             b_end.id -> {
+                if(et_boxcode.text.toString().isEmpty()){
+                    iToast.showToast(this@AssemblyActivity, "请扫描产品条码", 1000)
+                    return@OnClickListener
+                }
+
+
                putdata(b_end.text.toString())
             }
         }
@@ -156,37 +170,52 @@ class AssemblyActivity : BaseActivity() {
                             response.body()!!.string(),
                             AssemblyBean::class.java
                         )
-                        ccode=assemblyBean!!.formdata.ccode
-                        Log.i("bean-->", tag.toString())
-                        when (tag) {
-                            1 -> {
-                                tv_ccode.setText(assemblyBean!!.formdata.ccode)
-                                tv_cInvName.setText(assemblyBean!!.formdata.cInvName)
-                            }
-                            2 -> {
-
-                                tv_component_ccode.setText(assemblyBean!!.formdata.ccode)
-                                tv_component_cInvName.setText(assemblyBean!!.formdata.cInvName)
-                                et_code_assembly.setText("")
-                                if(assemblyList!!.contains(assemblyBean!!.formdata)){
-                                    iToast.showToast(this@AssemblyActivity,"此件已经扫描", 1000)
-                                }else{
-                                    assemblyList!!.add(assemblyBean!!.formdata)
-
-
-                                    sharedPreferences!!.edit()
-                                        .putString(
-                                            menuBean!!.menucode + "List",
-                                            Gson().toJson(assemblyList)
-                                        ).commit()
-                                    tv_count.setText(assemblyList!!.size.toString())
+                        if(assemblyBean!!.Resultcode=="200") {
+                            ccode = assemblyBean!!.formdata.ccode
+                            Log.i("bean-->", tag.toString())
+                            when (tag) {
+                                1 -> {//boxcode
+                                    tv_ccode.setText(assemblyBean!!.formdata.ccode)
+                                    tv_cInvName.setText(assemblyBean!!.formdata.cInvName)
 
                                 }
+                                2 -> {
 
+                                    tv_component_ccode.setText(assemblyBean!!.formdata.ccode)
+                                    tv_component_cInvName.setText(assemblyBean!!.formdata.cInvName)
+                                    et_code_assembly.setText("")
+                                    if (assemblyList!!.contains(assemblyBean!!.formdata)) {
+                                        iToast.showToast(this@AssemblyActivity, "此件已经扫描", 1000)
+                                    } else {
+
+                                        assemblyList!!.add(assemblyBean!!.formdata)
+
+
+                                        sharedPreferences!!.edit()
+                                            .putString(
+                                                menuBean!!.menucode + "List",
+                                                Gson().toJson(assemblyList)
+                                            ).commit()
+                                        tv_count.setText(assemblyList!!.size.toString())
+
+                                    }
+
+                                }
                             }
+                        }else{
+                            when (tag) {
+                                1 -> {//boxcode
+                                    et_boxcode.setText("")
+
+                                }
+                                2 -> {
+                                   et_code_assembly.setText("")
+                                }
+                            }
+                            iToast.showToast(this@AssemblyActivity,assemblyBean!!.ResultMessage, 1000)
+
+
                         }
-                    }else{
-                        iToast.showToast(this@AssemblyActivity,assemblyBean!!.ResultMessage, 1000)
                     }
                 } catch (e: Exception) {
                     e.printStackTrace()

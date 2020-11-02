@@ -1,9 +1,16 @@
 package com.lkrh.storescontrol.bean;
 
 public class ConfirmBean  {
+    @Override
+    public String toString() {
+        return "{" +
+                "required:'" + Resultcode + '\'' +
+                ", message:'" + ResultMessage + '\'' +
+                ""  +
+                '}';
+    }
 
-
-        private String Resultcode;
+    private String Resultcode;
         private String ResultMessage;
         private Formdata formdata;
         public void setResultcode(String Resultcode) {

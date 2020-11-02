@@ -206,7 +206,13 @@ public class IndexActivity extends BaseActivity {
                         intent  =new Intent(IndexActivity.this, ProductionwarehousingActivity.class);
 
                     }else if(userinfoBean.getMenu().get(i).getMenushowname().equals("扫码检查")){
-                        intent  =new Intent(IndexActivity.this, BillListActivity.class);
+                        if(company.equals("浦东瀚氏")){
+                            intent  =new Intent(IndexActivity.this, HsScancheckActivity.class);
+                        }else {
+                            intent  =new Intent(IndexActivity.this, BillListActivity.class);
+                        }
+
+
 
                     }else if(userinfoBean.getMenu().get(i).getMenucode().equals("GXBG")){
                         //工序报工

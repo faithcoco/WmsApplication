@@ -16,18 +16,24 @@ import android.widget.Toast;
 
 import androidx.databinding.DataBindingUtil;
 
+import com.alibaba.fastjson.JSON;
 import com.lkrh.storescontrol.BuildConfig;
 import com.lkrh.storescontrol.R;
+import com.lkrh.storescontrol.bean.ConfirmBean;
 import com.lkrh.storescontrol.url.Request;
 import com.lkrh.storescontrol.bean.LoginBean;
 import com.lkrh.storescontrol.url.iUrl;
 import com.lkrh.storescontrol.databinding.ActivityLoginBinding;
 import com.google.gson.Gson;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.GenericSignatureFormatError;
+import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -87,6 +93,9 @@ public class LoginActivity extends BaseActivity {
         });
 
 
+
+
+
     }
 
 
@@ -106,7 +115,7 @@ public class LoginActivity extends BaseActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("sp", Context.MODE_PRIVATE);
         if(sharedPreferences.getString("port","").equals("")){
 
-            sharedPreferences.edit().putString("port",Request.Qt_URL).commit();
+            sharedPreferences.edit().putString("port",Request.HS_URL).commit();
 
         }
         Request.URL=sharedPreferences.getString("port","");

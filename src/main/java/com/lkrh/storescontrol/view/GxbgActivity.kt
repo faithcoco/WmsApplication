@@ -117,7 +117,7 @@ class GxbgActivity : BaseActivity() {
     private fun setProcess(processData: ProcessBean.Data) {
         tv_process_rowno.setText("工序行号：" + processData.rowno)
         tv_process_ccode.setText("单号：" + processData.ccode)
-        tv_process_name.setText("工序名称：" + processData.invname)
+        tv_process_name.setText("工序描述：" + processData.invname)
         tv_process_count.setText("数量：" + processData.iQuantity)
         tv_done.setText("已完工：" + processData.quantitysBG)
         tv_undone.setText("未完工：" + processData.quantitysWBG)
