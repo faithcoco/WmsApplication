@@ -158,6 +158,7 @@ public class PutListActivity extends BaseActivity {
         buttonsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(arrivalHeadBeans!=null){
                     if(arrivalHeadBeans.size()==0){
                         Toast.makeText(PutListActivity.this,"请先添加清单",Toast.LENGTH_LONG).show();
@@ -181,16 +182,40 @@ public class PutListActivity extends BaseActivity {
                         SharedPreferences detailPreferences = getSharedPreferences(menuBean.getMenucode() + "Detail", 0);
                         List<ConfirmlistBean> detailsList = Untils.getDetails(detailPreferences);
                         for (int i = 0; i <detailsList.size() ; i++) {
-                            int undone=Integer.parseInt(detailsList.get(i).getField8value());
+                            
+                            double undone=Double.parseDouble(detailsList.get(i).getField8value());
                             if(undone!=0){
                                 Toast.makeText(PutListActivity.this,"有未扫码条目，请完成后再提交",Toast.LENGTH_LONG).show();
                                 return;
                             }
                         }
                     }
+                    if(getIntent().getStringExtra("menuname").equals("销售出库")){
+                        if(getIntent().getStringExtra("showmsg").isEmpty()){
+                            putData();
+                        }else {
+                            AlertDialog.Builder builder=new AlertDialog.Builder(PutListActivity.this);
+                            builder.setTitle("提示").setMessage(getIntent().getStringExtra("showmsg")).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    putData();
+                                }
+                            }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            }).create().show();
+                        }
+
+                    }else {
+                        putData();
+                    }
+                }else {
+                    putData();
                 }
 
-                    putData();
+
 
 
             }

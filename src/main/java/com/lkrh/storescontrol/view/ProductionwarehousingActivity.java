@@ -13,6 +13,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 
@@ -74,15 +75,11 @@ public class ProductionwarehousingActivity extends BaseActivity {
     List<ConfirmlistBean> detailsList;
     int defalultIquantity=25;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this, R.layout.activity_productionwarehousing);
-
-
-
-
-
 
         binding.etTimes.addTextChangedListener(new TextWatcher() {
             @Override
@@ -131,6 +128,8 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
             }
         });
+
+
         binding.etBoxcode.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View view, int i, KeyEvent event) {
@@ -159,13 +158,6 @@ public class ProductionwarehousingActivity extends BaseActivity {
         binding.etDock.setOnKeyListener(onKeyListener);
         binding.etTray.setOnKeyListener(onKeyListener);
         binding.etYhCode.setOnKeyListener(onKeyListener);
-
-
-
-
-
-
-
         binding.ivCwhcode.setOnClickListener(onClickListener);
         binding.ivPlate.setOnClickListener(onClickListener);
         binding.ivUpdatecwhcode.setOnClickListener(onClickListener);
@@ -178,7 +170,6 @@ public class ProductionwarehousingActivity extends BaseActivity {
         binding.etIquantity.setOnKeyListener(onKeyListener);
         binding.ivTransport.setOnClickListener(onClickListener);
         binding.ivClear.setOnClickListener(onClickListener);
-
         binding.ivTray.setOnClickListener(onClickListener);
         binding.ivHelp.setOnClickListener(onClickListener);
         binding.ivYhCode.setOnClickListener(onClickListener);
@@ -340,12 +331,12 @@ public class ProductionwarehousingActivity extends BaseActivity {
                 arrivalHeadBean.setIrowno(detailsList.get(getIntent().getIntExtra("position",-1)).getField10value());
                 arrivalHeadBean.setcInvCode(detailsList.get(getIntent().getIntExtra("position",-1)).getField4value());
             }
-
+            Log.i("tag","1");
             update(detailsList.get(getIntent().getIntExtra("position",-1)));
         }else {
             for (int i = 0; i < detailsList.size(); i++) {
 
-                if (detailsList.get(i).getField5value().equals(code) && !detailsList.get(i).getField8value().equals("0")) {
+                if (detailsList.get(i).getField5value().equals(code) && Double.parseDouble(detailsList.get(i).getField8value()) != 0) {
 
                     arrivalHeadBean.setIrowno(detailsList.get(i).getField10value());
                     arrivalHeadBean.setcInvCode(detailsList.get(i).getField4value());
@@ -353,6 +344,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
                     arrivalHeadBean.setcInvName(detailsList.get(i).getField3value());
 
                     binding.setBean(arrivalHeadBean);
+                    Log.i("data-->",detailsList.get(i).getField8value());
                     update(detailsList.get(i));
                     isVerification = true;
                     if (company.equals("新傲科技") && menuBean.getMenushowname().equals("材料出库")) {
@@ -474,6 +466,10 @@ public class ProductionwarehousingActivity extends BaseActivity {
                       jsonObject.put("ccode","");
                   }
            }
+            if(menuBean.getMenushowname().equals("发货出库")){
+                jsonObject.put("ccode",code);
+                jsonObject.put("barcode","");
+            }
 
 
         } catch (JSONException e) {
@@ -489,6 +485,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
                 try {
 
                    JSONObject object=new JSONObject(response.body().string());
+                   Log.i("res--->",object.toString());
                    switch (type){
                        case 0:
                            warehouseBean=new Gson().fromJson(object.toString(),WarehouseBean.class);
@@ -562,7 +559,10 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
                            binding.setBean(arrivalHeadBean);
                            binding.tvCposition.setText(arrivalHeadBean.getCposition());
-
+                           if(menuBean.getMenushowname().equals("发货出库")){
+                               binding.tvCustomer.setText(arrivalHeadBean.getCcuscode());
+                               binding.tvWarehouse.setText(arrivalHeadBean.getCwhName());
+                           }
 
                            if(binding.lPlate.getVisibility()==View.VISIBLE){
                                binding.tvNumber.setText(arrivalHeadBean.getIquantity());
@@ -716,17 +716,20 @@ public class ProductionwarehousingActivity extends BaseActivity {
                     intent=new Intent(ProductionwarehousingActivity.this,PutListActivity.class);
                     intent.putExtra("menuname",menuBean.getMenushowname());
                     intent.putExtra("menubean",menuBean);
-
+                    intent.putExtra("showmsg",getIntent().getStringExtra("showmsg"));
                     if(binding.rlCdefine10.getVisibility()==View.VISIBLE){
                         intent.putExtra("cdefine10",binding.etCdefine10.getText().toString());
                     }
                     startActivity(intent);
                     break;
                 case R.id.b_submit:
-                    if(arrivalHeadBean==null) {
-                        Toast.makeText(ProductionwarehousingActivity.this, "请扫描二维码", Toast.LENGTH_LONG).show();
-                        return;
-                    }
+
+                        if(arrivalHeadBean==null) {
+                            Toast.makeText(ProductionwarehousingActivity.this, "请扫描二维码", Toast.LENGTH_LONG).show();
+                            return;
+                        }
+
+
                     if(company.equals("新傲科技")){
                         arrivalHeadBean.setIquantity(binding.etIquantity.getText().toString());
                         checkBoxCode(binding.etBoxcode.getText().toString());
@@ -984,6 +987,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
                                     detailsList.get(i).getField1value().equals(arrivalHeadBean.getCInvCode())
 
                             ){
+                                Log.i("tag",3+"");
                                 update(detailsList.get(i));
                                 isVerification=true;
                             }
@@ -1019,7 +1023,8 @@ public class ProductionwarehousingActivity extends BaseActivity {
             double current=Double.parseDouble(bean.getField7value());
             double total=Double.parseDouble(bean.getField6value());
             double add=Double.parseDouble(arrivalHeadBean.getIquantity());
-
+            Log.i("bean-->",new Gson().toJson(confirmlistBean));
+            Log.i("data--->",current+"/"+total+"/"+add);
             if(current+add>total){
                 Toast.makeText(ProductionwarehousingActivity.this, "数量不能大于需求数量！", Toast.LENGTH_LONG).show();
                 return;
@@ -1054,7 +1059,7 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
 
     private void changeIquantity(int times) {
-        if(arrivalHeadBean!=null){
+        if(arrivalHeadBean!=null && arrivalHeadBean.getIquantity()!=null){
 
             BigDecimal i=new BigDecimal(Double.parseDouble(arrivalHeadBean.getIquantity()));
             BigDecimal time=new BigDecimal(times);
@@ -1411,13 +1416,13 @@ public class ProductionwarehousingActivity extends BaseActivity {
 
         }else if(menuBean.getMenushowname().equals("发货出库")){
 
-            binding.tvBatch.setText("客户箱码：");
-            binding.lYhCode.setVisibility(View.VISIBLE);
+            binding.tvBatch.setText("要货单号：");
+           // binding.lYhCode.setVisibility(View.VISIBLE);
             binding.rlCwhcode.setVisibility(View.GONE);
             binding.lCustomer.setVisibility(View.VISIBLE);
             binding.lWarehouse.setVisibility(View.VISIBLE);
             binding.lCvenabbname.setVisibility(View.GONE);
-            useEditIquantity();
+            //useEditIquantity();
 
 
 

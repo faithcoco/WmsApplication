@@ -35,6 +35,7 @@ import com.lkrh.storescontrol.untils.Untils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.GenericSignatureFormatError;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,6 +73,7 @@ public class BillListActivity extends BaseActivity {
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
                 if(keyEvent.getKeyCode()==KeyEvent.KEYCODE_ENTER){
+                    Log.i("getdata","1");
                     getData();
                 }
                 return false;
@@ -102,38 +104,25 @@ public class BillListActivity extends BaseActivity {
             }
         });
 
-        binding.etTray.addTextChangedListener(new TextWatcher() {
+        binding.etTray.setOnKeyListener(new View.OnKeyListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                if(keyEvent.getKeyCode()==KeyEvent.KEYCODE_ENTER){
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                search(editable.toString());
+                    search(binding.etTray.getText().toString());
+                }
+                return false;
             }
         });
-        binding.etSearch.addTextChangedListener(new TextWatcher() {
+        binding.etSearch.setOnKeyListener(new View.OnKeyListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
 
-            }
+                if(keyEvent.getKeyCode()==KeyEvent.KEYCODE_ENTER){
 
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-                tag=2;
-                search(editable.toString());
+                    search(binding.etSearch.getText().toString());
+                }
+                return false;
             }
         });
 
@@ -145,7 +134,17 @@ public class BillListActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        getData();
+
+
+        if(company.equals("浦东瀚氏") && menuBean.getMenushowname().equals("生产入库确认")){
+            if(list==null){
+                getData();
+            }
+
+        }else {
+            getData();
+        }
+
     }
 
     private void openScan() {
@@ -170,28 +169,20 @@ public class BillListActivity extends BaseActivity {
         if(result != null) {
             if(result.getContents() != null) {
               final   String code=result.getContents();
+              Log.i("code-->",tag+"");
                 switch (tag){
                     case 0:
                         binding.etCcode.setText(code);
+                        Log.i("getdata","3");
                         getData();
                         break;
                     case 1:
                         binding.etTray.setText(code);
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                search(code);
-                            }
-                        }).start();
+                        search(code);
                         break;
                     case 2:
                         binding.etSearch.setText(code);
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                search(code);
-                            }
-                        }).start();
+                        search(code);
                         break;
                 }
 
@@ -216,6 +207,7 @@ public class BillListActivity extends BaseActivity {
 
 
         }
+
         adapter = new Confirm2Adapter(searchList);
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
@@ -247,7 +239,7 @@ public class BillListActivity extends BaseActivity {
             e.printStackTrace();
         }
         String obj=jsonObject.toString();
-        Log.i("json object",obj);
+        Log.i(menuBean.getMenucode()+"json object-->",obj);
 
         Call<ResponseBody> data = Request.getRequestbody(obj);
         data.enqueue(new Callback<ResponseBody>() {

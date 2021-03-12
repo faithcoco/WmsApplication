@@ -521,6 +521,7 @@ public class BillDetailActivity extends BaseActivity {
                         Intent intent = new Intent(BillDetailActivity.this, ProductionwarehousingActivity.class);
                         intent.putExtra("menubean", menuBean);
                         intent.putExtra("position",i);
+                        intent.putExtra("showmsg",data.getShowmsg());
                         intent.putExtra("cvenabbname",getIntent().getStringExtra("cvenabbname"));
                         startActivity(intent);
                     }

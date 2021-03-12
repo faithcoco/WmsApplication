@@ -27,9 +27,12 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 10
-        versionName "1.4.4"
-        //pdhs 1.4.4 jw1.3.2 rego1.2. lincon 1.0.9 xinao1.5.0 qt1.5.7
+        versionName "1.5.4"
+        //pdhs 1.4.8 jw1.3.2 rego1.2. lincon 1.0.9 xinao1.5.3 qt1.5.7
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //hs myu8  myu9
+        //qt ERP002    .net.ad
+        //xinao SG00046    huamei123456789
 
     }
     applicationVariants.all { variant ->
@@ -78,7 +81,7 @@ dependencies {
     implementation files('libs/QR285Printer_sdk_20181206.jar')
     implementation files('libs/Msc.jar')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    compile 'com.alibaba:fastjson:1.1.72.android'
+    implementation 'com.alibaba:fastjson:1.1.72.android'
 
 
 }

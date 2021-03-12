@@ -37,9 +37,9 @@ class AssemblyListActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("sp", MODE_PRIVATE)
         var data = ""
-
+         Log.i("test-->",menuBean!!.getMenucode())
         assemblyList= ArrayList()
-        data = sharedPreferences!!.getString(menuBean!!.getMenucode() + "List", "")
+        data = sharedPreferences!!.getString(menuBean!!.getMenucode() + "List", "")?:"null"
 
         if (data != "") {
             try {

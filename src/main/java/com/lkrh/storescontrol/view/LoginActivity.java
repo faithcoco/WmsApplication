@@ -115,7 +115,7 @@ public class LoginActivity extends BaseActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("sp", Context.MODE_PRIVATE);
         if(sharedPreferences.getString("port","").equals("")){
 
-            sharedPreferences.edit().putString("port",Request.HS_URL).commit();
+            sharedPreferences.edit().putString("port",Request.XinAo_URL).commit();
 
         }
         Request.URL=sharedPreferences.getString("port","");
@@ -142,6 +142,7 @@ public class LoginActivity extends BaseActivity {
                                 editor.putBoolean("isChecked",activityLoginBinding.cbRemember.isChecked());
                                 editor.putString("userinfo",new Gson().toJson(resultBean));
                                 editor.commit();
+
                                 if(!resultBean.getVersionNumber().equals(BuildConfig.VERSION_NAME)){
 
                                     Log.i("url-->",Request.URL+"/upgrade/MMS_"+resultBean.getVersionNumber()+".apk");

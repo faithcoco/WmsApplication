@@ -589,6 +589,7 @@
                     style="@style/textview" />
                 <TextView
                     android:id="@+id/tv_warehouse"
+
                     style="@style/textview" />
             </LinearLayout>
 

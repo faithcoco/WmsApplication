@@ -49,12 +49,12 @@ class HsScancheckActivity :BaseActivity() {
         rv_list.setLayoutManager(LinearLayoutManager(this))
         rv_list.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
 
-        et_code.setOnKeyListener(View.OnKeyListener { view, i, keyEvent ->
-            if (i == KeyEvent.KEYCODE_ENTER && keyEvent.action == KeyEvent.ACTION_DOWN) {
-                check()
 
+        et_code.setOnKeyListener(View.OnKeyListener { _, i, event ->
+            if (i == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_DOWN) {
+               check()
             }
-            true
+            event.action == KeyEvent.ACTION_UP
         })
         b_search.setOnClickListener(View.OnClickListener {
             check()
@@ -94,7 +94,7 @@ class HsScancheckActivity :BaseActivity() {
             Toast.makeText(this, "条码重复", Toast.LENGTH_LONG).show()
             return
         }
-
+        Log.i("text-->",et_code.text.toString())
         if(et_code.text.toString().length != 21){
             Toast.makeText(this, "条码格式错误", Toast.LENGTH_LONG).show()
 

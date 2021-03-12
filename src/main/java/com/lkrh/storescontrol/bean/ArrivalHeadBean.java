@@ -48,6 +48,26 @@ public class ArrivalHeadBean implements Parcelable {
     private  String irowno;
     private String file;
     private  String cwhcode;
+
+    public String getCcuscode() {
+        return ccuscode;
+    }
+
+    public void setCcuscode(String ccuscode) {
+        this.ccuscode = ccuscode;
+    }
+
+    private String ccuscode;
+
+    public String getCwhName() {
+        return cwhName;
+    }
+
+    public void setCwhName(String cwhName) {
+        this.cwhName = cwhName;
+    }
+
+    private String cwhName;
     private String transport="";
 
 
@@ -553,7 +573,7 @@ public class ArrivalHeadBean implements Parcelable {
         dest.writeString(this.file);
         dest.writeString(this.cwhcode);
         dest.writeString(this.transport);
-
+        dest.writeString(this.cwhName);
         dest.writeString(this.tray);
         dest.writeString(this.category);
         dest.writeString(this.memo);
@@ -570,6 +590,7 @@ public class ArrivalHeadBean implements Parcelable {
         dest.writeString(this.cvenbatch);
         dest.writeString(this.inposition);
         dest.writeString(this.imageid);
+        dest.writeString(this.ccuscode);
     }
 
     protected ArrivalHeadBean(Parcel in) {
@@ -602,7 +623,7 @@ public class ArrivalHeadBean implements Parcelable {
         this.file = in.readString();
         this.cwhcode = in.readString();
         this.transport = in.readString();
-
+        this.cwhName=in.readString();
         this.tray = in.readString();
         this.category = in.readString();
         this.memo = in.readString();
@@ -619,6 +640,7 @@ public class ArrivalHeadBean implements Parcelable {
         this.cvenbatch = in.readString();
         this.inposition = in.readString();
         this.imageid = in.readString();
+        this.ccuscode=in.readString();
     }
 
     public static final Creator<ArrivalHeadBean> CREATOR = new Creator<ArrivalHeadBean>() {

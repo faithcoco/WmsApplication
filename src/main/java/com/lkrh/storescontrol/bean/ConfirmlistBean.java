@@ -72,6 +72,18 @@ public class ConfirmlistBean implements Parcelable {
         private String field8value;
         private String field8post;
 
+    public String getShowmsg() {
+        return showmsg;
+    }
+
+    public void setShowmsg(String showmsg) {
+        this.showmsg = showmsg;
+    }
+
+
+
+    private String showmsg;
+
     public String getField9key() {
         return field9key;
     }
@@ -393,6 +405,7 @@ public class ConfirmlistBean implements Parcelable {
         dest.writeString(this.field10key);
         dest.writeString(this.field10text);
         dest.writeString(this.field10value);
+        dest.writeString(this.showmsg);
     }
 
     public ConfirmlistBean() {
@@ -439,6 +452,7 @@ public class ConfirmlistBean implements Parcelable {
         this.field10key = in.readString();
         this.field10text = in.readString();
         this.field10value = in.readString();
+        this.showmsg=in.readString();
     }
 
     public static final Parcelable.Creator<ConfirmlistBean> CREATOR = new Parcelable.Creator<ConfirmlistBean>() {
